@@ -127,3 +127,26 @@ st.metric(f"Current {selected_stock} Price", f"₹{filtered_df['price'].iloc[-1]
 fig = px.line(filtered_df, x='event_time', y='price', title=f"{selected_stock} Trend")
 st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 ```
+---
+
+##  Final Result & Output
+
+###  Real-Time Analytics Dashboard
+The Streamlit dashboard fetches the transformed Parquet data from S3 and provides interactive visualizations.
+![Streamlit Dashboard Output](path/to/your/dashboard-screenshot.png)
+
+### ☁️ AWS S3 Data Lifecycle
+Below is the transition from raw ingestion to optimized storage:
+
+| Storage Layer | Data Format | Description |
+| :--- | :--- | :--- |
+| **Raw Zone** | `.json` | Individual event files captured by the Kafka Consumer. |
+| **Transformed** | `.parquet` | Compacted, columnar storage for high-speed analysis. |
+
+**Raw JSON Files in S3:**
+![S3 Raw JSON](path/to/your/s3-raw-screenshot.png)
+
+**Optimized Parquet File in S3:**
+![S3 Parquet](path/to/your/s3-parquet-screenshot.png)
+
+---
