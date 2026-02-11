@@ -133,7 +133,7 @@ st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
 ###  Real-Time Analytics Dashboard
 The Streamlit dashboard fetches the transformed Parquet data from S3 and provides interactive visualizations.
-![Streamlit Dashboard Output](path/to/your/dashboard-screenshot.png)
+![Streamlit Dashboard Output](Final_Result.jpg)
 
 ### ☁️ AWS S3 Data Lifecycle
 Below is the transition from raw ingestion to optimized storage:
