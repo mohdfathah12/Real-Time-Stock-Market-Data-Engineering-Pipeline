@@ -144,9 +144,7 @@ Below is the transition from raw ingestion to optimized storage:
 | **Transformed** | `.parquet` | Compacted, columnar storage for high-speed analysis. |
 
 **Raw JSON Files in S3:**
-![S3 Raw JSON](path/to/your/s3-raw-screenshot.png)
+![S3 Raw JSON](S3.jpeg)
 
-**Optimized Parquet File in S3:**
-![S3 Parquet](path/to/your/s3-parquet-screenshot.png)
 
 ---
