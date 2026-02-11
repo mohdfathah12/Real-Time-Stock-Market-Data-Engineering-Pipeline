@@ -8,7 +8,7 @@ An end-to-end data engineering project that ingests real-time stock market data 
 
 The pipeline follows a modern data lakehouse architecture, moving data from ingestion to visualization with a focus on performance and cost-efficiency.
 
-![Architecture Diagram](https://googleusercontent.com/image_generation_content/0)
+![Architecture Diagram](diagrams.jpg)
 
 * **Producer:** Python script simulating real-time stock data.
 * **Stream:** Apache Kafka (deployed on AWS EC2) for high-throughput data streaming.
